@@ -12,6 +12,6 @@ abstract class UseCaseSingle<Param, Result> {
     abstract operator fun invoke(param: Param): Single<Result>
 }
 
-abstract class UseCaseCompletable<Param, Result> {
-    abstract operator fun invoke(param: Param): Completable<Result>
+abstract class UseCaseCompletable<Param> {
+    abstract operator fun invoke(param: Param): Completable
 }
