@@ -1,8 +1,8 @@
-package com.example.myapplication.UserPouches.Domain
+package com.example.myapplication.userpouches.domain
 
-import com.example.myapplication.BaseStructure.UseCaseSingle
-import com.example.myapplication.UserPouches.Data.Entity.Pouch
-import com.example.myapplication.UserPouches.Data.UserPouchesRepository
+import com.example.myapplication.basestructure.UseCaseSingle
+import com.example.myapplication.userpouches.data.entity.Pouch
+import com.example.myapplication.userpouches.data.UserPouchesRepository
 import io.reactivex.Single
 
 class GetMoreUserPouchesUseCase(

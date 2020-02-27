@@ -1,10 +1,10 @@
 package com.example.myapplication
 
 import com.example.myapplication.FakeRepository.FakeUserPouchesRepository
-import com.example.myapplication.UserPouches.Data.Entity.Advice
-import com.example.myapplication.UserPouches.Domain.GetMoreUserPouchesUseCase
-import com.example.myapplication.UserPouches.Domain.GetUserPouchesUseCase
-import com.example.myapplication.UserPouches.Domain.OpenPouchUseCase
+import com.example.myapplication.userpouches.data.entity.Advice
+import com.example.myapplication.userpouches.domain.GetMoreUserPouchesUseCase
+import com.example.myapplication.userpouches.domain.GetUserPouchesUseCase
+import com.example.myapplication.userpouches.domain.OpenPouchUseCase
 import org.junit.Test
 
 class UserPouchesDomainTest {

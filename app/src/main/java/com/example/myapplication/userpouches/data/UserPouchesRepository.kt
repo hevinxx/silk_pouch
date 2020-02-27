@@ -1,7 +1,7 @@
-package com.example.myapplication.UserPouches.Data
+package com.example.myapplication.userpouches.data
 
-import com.example.myapplication.UserPouches.Data.Entity.Advice
-import com.example.myapplication.UserPouches.Data.Entity.Pouch
+import com.example.myapplication.userpouches.data.entity.Advice
+import com.example.myapplication.userpouches.data.entity.Pouch
 import io.reactivex.Single
 
 interface UserPouchesRepository {

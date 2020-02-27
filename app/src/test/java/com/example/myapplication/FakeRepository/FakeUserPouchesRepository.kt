@@ -1,8 +1,8 @@
 package com.example.myapplication.FakeRepository
 
-import com.example.myapplication.UserPouches.Data.Entity.Advice
-import com.example.myapplication.UserPouches.Data.Entity.Pouch
-import com.example.myapplication.UserPouches.Data.UserPouchesRepository
+import com.example.myapplication.userpouches.data.entity.Advice
+import com.example.myapplication.userpouches.data.entity.Pouch
+import com.example.myapplication.userpouches.data.UserPouchesRepository
 import io.reactivex.Single
 
 class FakeUserPouchesRepository : UserPouchesRepository {

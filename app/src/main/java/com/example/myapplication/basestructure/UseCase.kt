@@ -1,4 +1,4 @@
-package com.example.myapplication.BaseStructure
+package com.example.myapplication.basestructure
 
 import io.reactivex.Completable
 import io.reactivex.Observable

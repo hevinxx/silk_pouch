@@ -1,4 +1,4 @@
-package com.example.myapplication.UserPouches.Data.Entity
+package com.example.myapplication.userpouches.data.entity
 
 data class Advice(
     val id: Int,
