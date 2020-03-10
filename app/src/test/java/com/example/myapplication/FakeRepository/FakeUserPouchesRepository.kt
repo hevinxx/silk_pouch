@@ -1,5 +1,6 @@
 package com.example.myapplication.FakeRepository
 
+import com.example.myapplication.createpouch.data.entity.PostNewPouchResult
 import com.example.myapplication.userpouches.data.entity.Advice
 import com.example.myapplication.userpouches.data.entity.Pouch
 import com.example.myapplication.userpouches.data.UserPouchesRepository
@@ -29,16 +30,20 @@ class FakeUserPouchesRepository : UserPouchesRepository {
         )
     }
 
-    override fun getUserPouches(userId: Int): Single<List<Pouch>> {
+    override fun getUserPouches(): Single<List<Pouch>> {
         return Single.just(fakeUserPouches.subList(0, 5))
     }
 
-    override fun getMoreUserPouches(userId: Int): Single<List<Pouch>> {
+    override fun getMoreUserPouches(anchor: Int): Single<List<Pouch>> {
         return Single.just(fakeUserPouches.subList(5, 10))
     }
 
     override fun getRandomAdviceFromPouch(pouchId: Int): Single<Advice> {
         val pouchIndex = pouchId - 1
         return Single.just(fakeUserPouches[pouchIndex].advices[0])
+    }
+
+    override fun postNewPouch(pouch: Pouch): Single<PostNewPouchResult> {
+        return Single.just(PostNewPouchResult(pouch.id))
     }
 }

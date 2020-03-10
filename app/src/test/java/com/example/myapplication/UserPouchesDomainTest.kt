@@ -15,8 +15,8 @@ class UserPouchesDomainTest {
     private val openPouchUseCase = OpenPouchUseCase(fakeUserPouchesRepository)
 
     @Test
-    fun getUserPouchesTest() {
-        getUserPouchesUseCase(1)
+    fun getUserPouches() {
+        getUserPouchesUseCase()
             .test()
             .assertNoErrors()
             .assertSubscribed()
@@ -25,8 +25,8 @@ class UserPouchesDomainTest {
     }
 
     @Test
-    fun getMoreUserPouchesTest() {
-        getMoreUserPouchesUseCase(1)
+    fun getMoreUserPouches() {
+        getMoreUserPouchesUseCase(5)
             .test()
             .assertNoErrors()
             .assertSubscribed()
@@ -35,7 +35,7 @@ class UserPouchesDomainTest {
     }
 
     @Test
-    fun openPouchTest() {
+    fun openPouch() {
         openPouchUseCase(3)
             .test()
             .assertNoErrors()
